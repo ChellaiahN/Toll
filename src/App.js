@@ -13,6 +13,7 @@ function App() {
       <Routes>
       <Route path="/" element = {<Listpage/>}/>
       <Route path="/viewtolls" element = {<ViewTolls/>}/>
+      <Route path="/viewtolls?" element = {<ViewTolls/>}/>
       </Routes>
       
     </div>
