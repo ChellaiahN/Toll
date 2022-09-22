@@ -26,17 +26,10 @@ function AddToll(){
     const[returnn1,setReturn1]=useState('')
     const[returnn2,setReturn2]=useState('')
     const[returnn3,setReturn3]=useState('')
-    // const[error,setError]=useState(false)
-
+    
     const vehicles = ["Car/Jeep/Van","LCV","Truck/Bus" , "Heavy vehicle"]
     
     function savetoll(){
-    
-        // if (tollname===""){
-        //     setError(true)
-        // } if (!tollname.length == 0){
-        //     setError(false)
-        // }
 
       var tolls=JSON.parse(localStorage.getItem('Tollentry') || "[]")
       var toll={
