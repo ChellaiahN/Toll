@@ -95,7 +95,7 @@ function AddToll(){
                     
                     
                     <button onClick={savetoll}>submit</button><span> </span>
-                    <Link to ="/viewtolls"><button onClick={handleToClose}>cancel</button></Link>
+                    <button onClick={handleToClose}>cancel</button>
                 </form>
             </dialog>
 
