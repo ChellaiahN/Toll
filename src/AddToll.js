@@ -12,6 +12,11 @@ function AddToll(){
     const handleToClose = () => {
       setOpen(false);
     };
+    
+    const refreshPage = ()=>{
+     window.location.reload();
+  }
+
 
     const[tollname,setTollname]=useState('')
     const[vehicle,setVehicle]=useState('')
@@ -85,8 +90,8 @@ function AddToll(){
                     <input onChange={(a)=>{setReturn3(a.target.value)}} value={returnn3} type="number" placeholder="Return Journey" ></input><br></br>
                     
                     
-                    <button onClick={savetoll}>submit</button><span> </span>
-                    <button onClick={handleToClose}>cancel</button>
+                    <Link to ="/viewtolls"><button onClick={()=>{savetoll();refreshPage()}}>submit</button><Link to ="/viewtolls"><span> </span>
+                    <Link to ="/viewtolls"><button onClick={()=>{handleToClose();refreshPage()}}><Link to ="/viewtolls">cancel</button>
                 </form>
             </dialog>
 
