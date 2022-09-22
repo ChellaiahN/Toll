@@ -50,8 +50,6 @@ function AddToll(){
       tolls.push(toll)
         localStorage.setItem('Tollentry',JSON.stringify(tolls))
         
-        alert("Toll details added successfully");
-        
 
     }
     return(
