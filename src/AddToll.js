@@ -1,4 +1,6 @@
 import {useState} from 'react'
+import { Link } from "react-router-dom";
+
 
 function AddToll(){
     const [open, setOpen] = useState(false);
@@ -91,7 +93,7 @@ function AddToll(){
                     
                     
                     <button onClick={savetoll}>submit</button><span> </span>
-                    <button onClick={handleToClose}>cancel</button>
+                    <Link to ="/viewtolls"><button onClick={handleToClose}>cancel</button></Link>
                 </form>
             </dialog>
 
