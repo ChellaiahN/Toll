@@ -22,7 +22,6 @@ function ViewTolls(){
         </div>
         <div>
             <AddToll></AddToll>
-
             <Link to ="/"><button> Back To Vehicle Logs </button></Link> <span> </span>
             
             <input onChange={(a)=>{setSearchh(a.target.value)}} type="text" value={searchh} placeholder="Search a Toll" ></input>
