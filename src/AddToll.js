@@ -94,7 +94,7 @@ function AddToll(){
                     <input onChange={(a)=>{setReturn3(a.target.value)}} value={returnn3} type="number" placeholder="Return Journey" ></input><br></br>
                     
                     
-                    <link to="/viewtolls"><button onClick={savetoll}>submit</button><span> </span></link>
+                    <link to="/viewtolls"><button onClick={savetoll}>submit</button></link><span> </span>
                     <link to="/viewtolls"><button onClick={handleToClose}>cancel</button></link>
                 </form>
             </dialog>
